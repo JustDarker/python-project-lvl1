@@ -3,3 +3,6 @@ install:
 
 lint:
 	poetry run flake8 brain_games
+
+run:
+	poetry run brain-games

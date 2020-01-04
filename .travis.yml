@@ -1,5 +1,5 @@
 language: python
-python: 3.6
+python: "^3.6"
 
 install: make
 
@@ -9,4 +9,5 @@ before_install:
 install:
     - make install
 
-scripts: make lint
+scripts:
+    - make lint
