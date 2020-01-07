@@ -4,7 +4,7 @@ from brain_games import cli
 from random import randrange
 
 
-def brain_even():
+def main():
     name = cli.run()
     print('Answer "yes" if number even otherwise answer "no".')
 
@@ -28,3 +28,7 @@ def brain_even():
         print("3 out of 3! Congratulations, " + name + "!")
     else:
         print(str(count) + " out of 3. Better luck next time.")
+
+
+if __name__ == '__main__':
+    main()
