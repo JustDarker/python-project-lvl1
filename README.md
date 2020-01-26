@@ -3,3 +3,5 @@
 [![Build Status](https://travis-ci.org/JustDarker/python-project-lvl1.svg?branch=master)](https://travis-ci.org/JustDarker/python-project-lvl1)
 
 [![asciicast](https://asciinema.org/a/sgIiWGZM4OnZ2DGjXm8S2TWiI.svg)](https://asciinema.org/a/sgIiWGZM4OnZ2DGjXm8S2TWiI)
+
+[![asciicast](https://asciinema.org/a/u48zCcW9seB3tbWt6LcMJ0eXE.svg)](https://asciinema.org/a/u48zCcW9seB3tbWt6LcMJ0eXE)
