@@ -1,5 +1,6 @@
 from brain_games import cli
 
+
 def run(game):
     name = cli.run()
     print(game.game_q)
@@ -9,7 +10,7 @@ def run(game):
     for i in range(3):
         question = game.main()
         print('Question: ' + str(question))
-        
+
         answer = cli.answer()
 
         rightAnswer = game.rightAnswer(question)
@@ -24,5 +25,3 @@ def run(game):
 
     if count == 3:
         print("Congratulations, " + name)
-        
-        
