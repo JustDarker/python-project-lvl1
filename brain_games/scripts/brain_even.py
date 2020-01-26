@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
 from brain_games.games import brain_even
+from brain_games.scripts import engine
 
 
 def main():
-    brain_even.main()
+    engine.run(brain_even)
 
 
 if __name__ == '__main__':

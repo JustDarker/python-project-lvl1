@@ -1,14 +1,21 @@
-def brain_calc():
-    game_q = "What is the result of the expression?"
-    number1 = randrange(1, 101)
-    number2 = randrange(1, 101)
-    operator = rand('+', '-', '*')
-    q = str(number1) + operator + str(number2)
+from random import choice, randrange
+
+game_q = "What is the result of the expression?"
+
+def main():
+    number1 = randrange(3, 12)
+    number2 = randrange(3, 12)
+    operator = choice('+-*')
+    question = str(number1) + " " + operator + " " + str(number2)
+    return question
+
+def rightAnswer(question):
+    number1, operator, number2 = question.split()
 
     if operator == '+':
-        answer = number1 + number2
+        return int(number1) + int(number2)
     if operator == '-':
-        answer = number1 - number2
+        return int(number1) - int(number2)
     if operator == '*':
-        answer = number1 * number2
+        return int(number1) * int(number2)
     
