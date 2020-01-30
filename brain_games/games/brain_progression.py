@@ -1,5 +1,6 @@
 from random import randrange
 
+
 game_q = "What number is missing in the progression?"
 
 
