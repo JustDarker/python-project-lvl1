@@ -19,7 +19,8 @@ def run(game):
             print("Correct!\n")
             count = count + 1
         elif answer != rightAnswer:
-            print("\n" + str(answer) + " is wrong answer ;(. Correct answer was " + str(rightAnswer))
+            template = "\n{} is wrong answer ;(. Correct answer was {}"
+            print(template.format(str(answer), str(rightAnswer)))
             print("Let's try again, " + str(name))
             break
 

@@ -5,6 +5,7 @@ install: make
 
 before_install:
     - pip install poetry
+    - pip install flake8
 
 install:
     - make install
