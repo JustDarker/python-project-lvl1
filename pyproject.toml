@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "JustDarker_brain_games"
-version = "0.4.1"
+version = "0.6.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Darker"]
 packages = [
 	{ include = "brain_games"},
 ]
@@ -18,6 +18,8 @@ flake8 = "^3.7"
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
