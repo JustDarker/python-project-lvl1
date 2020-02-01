@@ -1,11 +1,17 @@
 [tool.poetry]
 name = "JustDarker_brain_games"
-version = "0.7.0"
-description = ""
+version = "0.7.2"
+description = "5 console mini-games for the brain"
 authors = ["Darker"]
 packages = [
 	{ include = "brain_games"},
 ]
+classifiers = [
+    "Environment :: Console",
+	"Natural Language :: English",
+	"Programming Language :: Python"
+]
+repository = "https://github.com/JustDarker/python-project-lvl1"
 
 [tool.poetry.dependencies]
 python = "^3.6"
