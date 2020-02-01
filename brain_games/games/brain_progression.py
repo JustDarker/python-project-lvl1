@@ -1,7 +1,7 @@
 from random import randrange
 
 
-game_q = "What number is missing in the progression?"
+QUESTION = "What number is missing in the progression?"
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
     return srtProgr
 
 
-def rightAnswer(question):
+def right_answer(question):
     progression = question.split(" ")
 
     for (index, element) in enumerate(progression):

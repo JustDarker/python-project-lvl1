@@ -3,7 +3,7 @@ from brain_games import cli
 
 def run(game):
     name = cli.run()
-    print(game.game_q)
+    print(game.QUESTION)
 
     count = 0
 
@@ -13,14 +13,14 @@ def run(game):
 
         answer = cli.answer()
 
-        rightAnswer = game.rightAnswer(question)
+        right_answer = game.right_answer(question)
 
-        if answer == str(rightAnswer):
+        if answer == str(right_answer):
             print("Correct!\n")
             count = count + 1
-        elif answer != rightAnswer:
+        elif answer != right_answer:
             template = "\n{} is wrong answer ;(. Correct answer was {}"
-            print(template.format(str(answer), str(rightAnswer)))
+            print(template.format(str(answer), str(right_answer)))
             print("Let's try again, " + str(name))
             break
 
