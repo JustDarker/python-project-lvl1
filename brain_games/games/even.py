@@ -4,7 +4,8 @@ QUESTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def main():
-    return randrange(1, 101)
+    question = randrange(1, 101)
+    return question, right_answer(question)
 
 
 def right_answer(question):

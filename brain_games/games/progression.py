@@ -22,12 +22,8 @@ def main():
 
     srtProgr = ' '.join(str(x) for x in progression)
 
-    return srtProgr
+    return srtProgr, right_answer(progression)
 
 
 def right_answer(question):
-    progression = question.split(" ")
-
-    for (index, element) in enumerate(progression):
-        if progression[index] != ".." and progression[index+1] != "..":
-            return int(progression[index+1]) - int(progression[index])
+    return str(question[1] - question[0])

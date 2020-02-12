@@ -7,8 +7,8 @@ def main():
     number1 = randrange(3, 12)
     number2 = randrange(3, 12)
     operator = choice('+-*')
-    question = str(number1) + " " + operator + " " + str(number2)
-    return question
+    question = "{} {} {}".format(number1, operator, number2)
+    return question, str(right_answer(question))
 
 
 def right_answer(question):
