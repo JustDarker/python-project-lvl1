@@ -17,12 +17,14 @@ def main():
         progression.append(progression[i - 1] + progression_step)
         i = i + 1
 
-    unknownElementPos = randrange(0, 10)
-    progression[unknownElementPos] = ".."
+    new_right_answer = right_answer(progression)
+
+    unknown_element_pos = randrange(0, 10)
+    progression[unknown_element_pos] = ".."
 
     srtProgr = ' '.join(str(x) for x in progression)
 
-    return srtProgr, right_answer(progression)
+    return srtProgr, new_right_answer
 
 
 def right_answer(question):
