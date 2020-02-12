@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "JustDarker_brain_games"
-version = "0.7.2"
+version = "0.7.3"
 description = "5 console mini-games for the brain"
 authors = ["Darker"]
 packages = [
@@ -30,4 +30,3 @@ brain-prime = "brain_games.scripts.brain_prime:main"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
-
