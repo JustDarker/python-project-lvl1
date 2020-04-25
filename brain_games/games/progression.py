@@ -2,6 +2,7 @@ from random import randrange
 
 
 QUESTION = "What number is missing in the progression?"
+PROGRESSION_LENGTH = 10
 
 
 def main():
@@ -13,13 +14,14 @@ def main():
 
     i = 1
 
-    while i < 10:
-        progression.append(progression[i - 1] + progression_step)
+    while i < PROGRESSION_LENGTH:
+        progression.append(progression_start + progression_step * i)
         i = i + 1
 
-    new_right_answer = right_answer(progression)
-
     unknown_element_pos = randrange(0, 10)
+
+    new_right_answer = right_answer(progression, unknown_element_pos)
+
     progression[unknown_element_pos] = ".."
 
     srtProgr = ' '.join(str(x) for x in progression)
@@ -27,5 +29,5 @@ def main():
     return srtProgr, new_right_answer
 
 
-def right_answer(question):
-    return str(question[1] - question[0])
+def right_answer(question, unknown_element_pos):
+    return str(question[unknown_element_pos])

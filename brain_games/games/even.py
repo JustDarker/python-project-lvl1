@@ -5,11 +5,11 @@ QUESTION = 'Answer "yes" if number even otherwise answer "no".'
 
 def main():
     question = randrange(1, 101)
-    return question, right_answer(question)
+    return question, is_even(question)
 
 
-def right_answer(question):
+def is_even(question):
     if question % 2 == 0:
-        return "yes"
-    elif question % 2 != 0:
-        return "no"
+        return True
+    else:
+        return False

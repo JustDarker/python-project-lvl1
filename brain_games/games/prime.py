@@ -6,10 +6,10 @@ QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def main():
     question = randrange(1, 102)
-    return question, right_answer(question)
+    return question, is_prime(question)
 
 
-def right_answer(question):
+def is_prime(question):
 
     divider_count = 0
 
